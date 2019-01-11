@@ -1,7 +1,7 @@
 # Rock-Scissors-Paper [![Build Status](https://travis-ci.com/rezaep/Rock-Scissors-Paper.svg?branch=master)](https://travis-ci.com/rezaep/Rock-Scissors-Paper) [![Coverage Status](https://coveralls.io/repos/github/rezaep/Rock-Scissors-Paper/badge.svg?branch=master)](https://coveralls.io/github/rezaep/Rock-Scissors-Paper?branch=master)
 A repository containing Rock-Scissor-Paper project.
 
->Rock-scissors-paper is a zero sum hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. 
+>Rock-scissors-paper is a zero-sum hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. 
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ What things you need to run the project
 ```
 Java Development Kit (JDK 8+)
 Maven
-Docker (if you want to run project using Docker image)
+Docker (if you want to run the project using Docker image)
 ```
 
 ### Installing
@@ -25,7 +25,7 @@ git clone https://github.com/rezaep/Rock-Scissors-Paper.git
 ```
 
 ```
-Use Maven build tool to build the project. This command runs tests and build a Jar file.
+Use Maven build tool to build the project. This command runs tests and builds a Jar file.
 mvn clean test package
 ```
 
