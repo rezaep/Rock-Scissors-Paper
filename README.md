@@ -1,4 +1,4 @@
-# Rock-Scissors-Paper [![Build Status](https://travis-ci.com/rezaep/Rock-Scissors-Paper.svg?branch=master)](https://travis-ci.com/rezaep/Rock-Scissors-Paper) [![Coverage Status](https://coveralls.io/repos/github/rezaep/Rock-Scissors-Paper/badge.svg?branch=master)](https://coveralls.io/github/rezaep/Rock-Scissors-Paper?branch=master)
+# Rock-Scissors-Paper [![Build Status](https://travis-ci.com/rezaep/Rock-Scissors-Paper.svg?branch=master)](https://travis-ci.com/rezaep/Rock-Scissors-Paper) [![Coverage Status](https://coveralls.io/repos/github/rezaep/Rock-Scissors-Paper/badge.svg?branch=master)](https://coveralls.io/github/rezaep/Rock-Scissors-Paper?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/816b8df8ae30486f937a71ec8c2527c5)](https://www.codacy.com/app/rezaep/Rock-Scissors-Paper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rezaep/Rock-Scissors-Paper&amp;utm_campaign=Badge_Grade)
 A repository containing Rock-Scissor-Paper project.
 
 >Rock-scissors-paper is a zero-sum hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. 
