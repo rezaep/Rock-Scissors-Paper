@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class PaperMoveStrategyTest {
 
     @Test
-    void getMove_PaperMove() {
+    void getMoveReturnPaperMove() {
         PaperMoveStrategy paperMoveStrategy = new PaperMoveStrategy();
 
         assertEquals(paperMoveStrategy.getMove(), Move.PAPER);

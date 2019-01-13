@@ -29,7 +29,7 @@ class MatchTest {
     }
 
     @Test
-    void playRound_OneAndOnlyOneOfPlayerAWinCountOrPlayerBWinCountOrTieCountFieldsShouldIncreaseToOne() {
+    void playRoundOneAndOnlyOneOfPlayerAWinCountOrPlayerBWinCountOrTieCountFieldsShouldIncreaseToOne() {
         match.playRound();
 
         int total = match.getPlayerAWinCount() + match.getPlayerBWinCount() + match.getTieCount();
@@ -38,44 +38,44 @@ class MatchTest {
     }
 
     @Test
-    void checkRoundResult_SameMove_Tie() {
+    void checkRoundResultWithSameMoveLeadsToATie() {
         assertEquals(match.checkRoundResult(Move.ROCK, Move.ROCK), Result.TIE);
         assertEquals(match.checkRoundResult(Move.SCISSORS, Move.SCISSORS), Result.TIE);
         assertEquals(match.checkRoundResult(Move.PAPER, Move.PAPER), Result.TIE);
     }
 
     @Test
-    void checkRoundResult_PlayerARockPlayerBScissors_PLAYER_A_WON() {
+    void checkRoundResultWhenPlayerARockPlayerBScissorsLeadsToPLAYERAWON() {
         assertEquals(match.checkRoundResult(Move.ROCK, Move.SCISSORS), Result.PLAYER_A_WON);
     }
 
     @Test
-    void checkRoundResult_PlayerARockPlayerBPaper_PLAYER_B_WON() {
+    void checkRoundResultWhenPlayerARockPlayerBPaperLeadsToPLAYERBWON() {
         assertEquals(match.checkRoundResult(Move.ROCK, Move.PAPER), Result.PLAYER_B_WON);
     }
 
     @Test
-    void checkRoundResult_PlayerAScissorsPlayerBRock_PLAYER_B_WON() {
+    void checkRoundResultWhenPlayerAScissorsPlayerBRockLeadsToPLAYERBWON() {
         assertEquals(match.checkRoundResult(Move.SCISSORS, Move.ROCK), Result.PLAYER_B_WON);
     }
 
     @Test
-    void checkRoundResult_PlayerAScissorsPlayerBPaper_PLAYER_A_WON() {
+    void checkRoundResultWhenPlayerAScissorsPlayerBPaperLeadsToPLAYERAWON() {
         assertEquals(match.checkRoundResult(Move.SCISSORS, Move.PAPER), Result.PLAYER_A_WON);
     }
 
     @Test
-    void checkRoundResult_PlayerAPaperPlayerBRock_PLAYER_A_WON() {
+    void checkRoundResultWhenPlayerAPaperPlayerBRockLeadsToPLAYERAWON() {
         assertEquals(match.checkRoundResult(Move.PAPER, Move.ROCK), Result.PLAYER_A_WON);
     }
 
     @Test
-    void checkRoundResult_PlayerAPaperPlayerBScissors_PLAYER_B_WON() {
+    void checkRoundResultWhenPlayerAPaperPlayerBScissorsLeadsToPLAYERBWON() {
         assertEquals(match.checkRoundResult(Move.PAPER, Move.SCISSORS), Result.PLAYER_B_WON);
     }
 
     @Test
-    void getResult_PlayerAHasMoreWin_PLAYER_A_WON() throws NoSuchFieldException, IllegalAccessException {
+    void getResultWhenPlayerAHasMoreWinLeadToPLAYERAWON() throws NoSuchFieldException, IllegalAccessException {
         // Use Reflection to set private fields to specific values
         // Player A has more win than player B
         Field playerAWinCountField = match.getClass().getDeclaredField(PLAYER_A_WIN_COUNT_FIELD_NAME);
@@ -90,7 +90,7 @@ class MatchTest {
     }
 
     @Test
-    void getResult_PlayerBHasMoreWin_PLAYER_B_WON() throws NoSuchFieldException, IllegalAccessException {
+    void getResultWhenPlayerBHasMoreWinLeadToPLAYERBWON() throws NoSuchFieldException, IllegalAccessException {
         // Use Reflection to set private fields to specific values
         // Player B has more win than player A
         Field playerAWinCountField = match.getClass().getDeclaredField(PLAYER_A_WIN_COUNT_FIELD_NAME);
@@ -105,7 +105,7 @@ class MatchTest {
     }
 
     @Test
-    void getResult_BothPlayerHaveEqualWins_TIE() throws NoSuchFieldException, IllegalAccessException {
+    void getResultWhenBothPlayerHaveEqualWinsLeadsToATIE() throws NoSuchFieldException, IllegalAccessException {
         // Use Reflection to set private fields to specific values
         // Both players have equal wins
         Field playerAWinCountField = match.getClass().getDeclaredField(PLAYER_A_WIN_COUNT_FIELD_NAME);
