@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class RandomMoveStrategyTest {
 
     @Test
-    void getMove_ReturnRockOrScissorsOrPaper() {
+    void getMoveReturnRockOrScissorsOrPaper() {
         RandomMoveStrategy randomMoveStrategy = new RandomMoveStrategy();
         Move move = randomMoveStrategy.getMove();
 
